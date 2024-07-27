@@ -5,6 +5,8 @@ This react native project is built and developed with macOS and iOS simulator.
 
 
 # Getting Started
+After cloning this repo on local device, do the following: 
+
 ## Requirements to set up your environment
 For the following,
    
@@ -38,7 +40,7 @@ For the following,
 
 ## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+First, you will need navigate to the root directory of this project, then start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
 To start Metro, run the following command from the _root_ of your React Native project:
 
@@ -81,7 +83,7 @@ This is one way to run your app — you can also run it directly from within And
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+You've successfully run the React Native App. :partying_face:
 
 ### Now what?
 
