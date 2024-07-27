@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {View, Text, Switch, StyleSheet, ActivityIndicator} from 'react-native';
+import {View, Text, StyleSheet, ActivityIndicator, Image} from 'react-native';
 import useSWR from 'swr';
 import axios from 'axios';
-import SwitchTempUnits from "./SwitchTempUnits";
+import SwitchTempUnits from './SwitchTempUnits';
 
 /*
 Steps on terminal to run app:
@@ -36,23 +36,38 @@ const Weather = () => {
 
   // Conversion between Celsius and Fahrenheit
   const temperature = isCelsius
-    ? data.main.temp // - 273.15
-    : (data.main.temp * 9) / 5 + 32;
+      ? data.main.temp // - 273.15
+      : (data.main.temp * 9) / 5 + 32;
 
   const temperatureUnit = isCelsius ? 'C' : 'F';
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.city}>{city}</Text>
-      <Text style={styles.temperature}>
-        {temperature.toFixed(1)}°{temperatureUnit}
-      </Text>
+  // Getting today's date
+  const currentDate = new Date().toLocaleDateString('en-US');
 
-      <SwitchTempUnits
-        isCelsius={isCelsius}
-        onValueChange={() => setIsCelsius(!isCelsius)}
-      />
-    </View>
+  // Getting other weather infos
+  const weatherCondition = data.weather[0].main;
+  const weatherDescription = data.weather[0].description;
+  const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+  return (
+      <View style={styles.container}>
+        <Text style={styles.city}>{city}</Text>
+
+        <Text style={styles.date}>{currentDate}</Text>
+
+        <Image source={{uri: weatherIcon}} style={styles.icon} />
+        <Text style={styles.condition}>{weatherCondition}</Text>
+        <Text style={styles.description}>{weatherDescription}</Text>
+
+        <Text style={styles.temperature}>
+          {temperature.toFixed(1)}°{temperatureUnit}
+        </Text>
+
+        <SwitchTempUnits
+            isCelsius={isCelsius}
+            onValueChange={() => setIsCelsius(!isCelsius)}
+        />
+      </View>
   );
 };
 
@@ -68,6 +83,24 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
+  },
+  date: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  icon: {
+    width: 100,
+    height: 100,
+    marginBottom: 5,
+  },
+  condition: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  description: {
+    fontSize: 14,
+    marginBottom: 5,
   },
   temperature: {
     fontSize: 16,
