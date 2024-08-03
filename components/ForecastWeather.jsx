@@ -7,7 +7,7 @@ const ForecastWeather = ({forecastList, isCelsius}) => {
     const temperatureUnit = isCelsius ? 'C' : 'F';
 
     return(
-        <View>
+        <View style={styles.forecastContainer}>
             <Text style={styles.forecastTitle}>5-Day Forecast: </Text>
             <FlatList
                 data={forecastList}
@@ -31,6 +31,9 @@ const ForecastWeather = ({forecastList, isCelsius}) => {
 };
 
 const styles = StyleSheet.create({
+    forecastContainer: {
+        flex: 1,
+    },
     forecastTitle: {
         fontSize: 22,
         fontWeight: 'bold',
