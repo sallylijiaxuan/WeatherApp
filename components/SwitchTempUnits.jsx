@@ -4,9 +4,9 @@ import {View, Text, Switch, StyleSheet} from 'react-native';
 const SwitchTempUnits = ({isCelsius, onValueChange}) => {
   return (
     <View style={styles.switchContainer}>
-      <Text style={styles.switchLabel}>Celsius</Text>
+      <Text style={styles.switchLabel}>C°</Text>
       <Switch value={isCelsius} onValueChange={onValueChange} />
-      <Text style={styles.switchLabel}>Fahrenheit</Text>
+      <Text style={styles.switchLabel}>F°</Text>
     </View>
   );
 };
