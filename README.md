@@ -1,12 +1,46 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Overview
+This react native project is built and developed with macOS and iOS simulator.
+
+
 # Getting Started
+After cloning this repo on local device, do the following: 
+
+## Requirements to set up your environment
+For the following,
+   
+   - **Development OS:** macOS
+   
+   - **Taget OS:** iOS
+
+### Installing dependencies
+
+1) Install Node and Watchman with [**Homebew**](https://brew.sh) in a terminal before installing the below with Homebrew:
+   - `brew install node`
+   - `brew install watchman`
+  
+2) Install **Xcode** from the [**Mac App Store**](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+
+   Install the iOS simulator and other tools to build iOS app.
+
+   a) Install the Xcode Command Line Tools
+   
+   Open Xcode -> Settings (or Preferences) -> Locations panel -> Select most recent version of Command Line Tools from the drop down menu
+
+   b) Install iOS Simulator in Xcode
+
+   Open Xcode -> Settings (or Preferences) -> Platforms (or Components) tab -> click "+" icon -> Select simulator that you wish to use
+
+
+3) Install CocoaPods
+   - `sudo gem install cocoapods`
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+First, you will need navigate to the root directory of this project, then start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
 To start Metro, run the following command from the _root_ of your React Native project:
 
@@ -46,18 +80,10 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
 ## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+You've successfully run the React Native App. :partying_face:
 
 ### Now what?
 
