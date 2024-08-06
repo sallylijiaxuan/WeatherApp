@@ -1,4 +1,5 @@
 /* eslint-disable */
+// Author:
 import {View, Text, Image, StyleSheet} from 'react-native';
 
 const CurrentWeather = ({city, weatherData, isCelsius}) => {

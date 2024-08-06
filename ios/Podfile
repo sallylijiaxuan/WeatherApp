@@ -16,7 +16,9 @@ end
 
 target 'MyProject' do
   config = use_native_modules!
-
+  
+  # pod 'lottie-react-native', '~> 6.7.2'
+  # pod 'lottie-ios', '~> 4.4.1'
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
