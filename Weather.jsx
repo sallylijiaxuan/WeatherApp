@@ -6,6 +6,8 @@ import axios from 'axios';
 import SwitchTempUnits from './components/SwitchTempUnits';
 import CurrentWeather from './components/CurrentWeather';
 import ForecastWeather from "./components/ForecastWeather";
+import Clouds from './animations/Clouds';
+import WeatherAnimations from "./components/WeatherAnimations";
 
 /*
 Steps on terminal to run app:
@@ -50,6 +52,7 @@ const Weather = () => {
 
   // Getting today's date
   const currentDate = new Date().toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'});
+  const currentCondition = weatherData.weather[0].main;
 
   // Extracting forecast data information based on the most prevalent conditions for each day
   const forecastList = Object.values(
@@ -97,7 +100,8 @@ const Weather = () => {
 
   return (
       <View style={styles.container}>
-
+          <Clouds />
+          {/*// <WeatherAnimations condition={currentCondition} />/*/}
         <View style={styles.dateAndSwitchContainer}>
             <View style={styles.dateContainer}>
                 <Text style={styles.date}>{currentDate}</Text>
