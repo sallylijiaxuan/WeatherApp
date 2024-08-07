@@ -6,7 +6,7 @@ This react native project is built and developed with macOS and iOS simulator.
 
 Its a weather mobile application that allows the user to select one of the cities in the US, and displays its corresponding current weather information, as well as a 5-day forecast.
 
-For more details on project contributions, please read contributions.txt.
+For more details on project contributions, please read CONTRIBUTIONS.md.
 
 ### Features
 1) [add something about selecting cities]
