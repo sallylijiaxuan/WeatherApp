@@ -3,10 +3,10 @@ import React, {useRef, useState} from 'react';
 import RainDrop from './RainDrop';
 
 const { width: screenWidth } = Dimensions.get('window');
-const NUM_DROPS = 100;
+const NUM_DROPS = 30;
 const DROP_DURATION = 3000;
 
-const Rain = () => {
+const Drizzle = () => {
     const pool = useRef([]);
     const [raindrops, setRaindrops] = useState(Array(NUM_DROPS).fill(null));
 
@@ -48,4 +48,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Rain;
+export default Drizzle;
