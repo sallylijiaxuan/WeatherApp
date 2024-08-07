@@ -8,6 +8,7 @@ import CurrentWeather from './components/CurrentWeather';
 import ForecastWeather from "./components/ForecastWeather";
 import Clouds from './animations/Clouds';
 import WeatherAnimations from "./components/WeatherAnimations";
+import Location from "./components/Location";
 
 /*
 Steps on terminal to run app:
@@ -105,6 +106,10 @@ const Weather = () => {
         <View style={styles.dateAndSwitchContainer}>
             <View style={styles.dateContainer}>
                 <Text style={styles.date}>{currentDate}</Text>
+            </View>
+
+            <View>
+                <Location />
             </View>
 
             <View style={styles.switchContainer}>
