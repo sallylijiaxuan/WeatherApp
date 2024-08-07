@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa6354f-07a1-4367-ad9c-ba7e9200d8c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/city.list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Date.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Location.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTIONS.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTIONS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Weather.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +24,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2kFnIFTJPCbcorGRfeCQlq2bttG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,14 +38,14 @@
     "Node.js.App.jsx.executor": "Run",
     "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "draft2-ellen",
     "last_opened_file_path": "/Users/jiaxuan/Documents/GitHub/WeatherApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/jiaxuan/Documents/GitHub/WeatherApp/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/ellenkho/Documents/GitHub/WeatherApp/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

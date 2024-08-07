@@ -1,12 +1,11 @@
 /* eslint-disable */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet, ActivityIndicator, Image, FlatList} from 'react-native';
 import useSWR from 'swr';
 import axios from 'axios';
 import SwitchTempUnits from './components/SwitchTempUnits';
 import CurrentWeather from './components/CurrentWeather';
 import ForecastWeather from "./components/ForecastWeather";
-import Clouds from './animations/Clouds';
 import WeatherAnimations from "./components/WeatherAnimations";
 import Location from "./components/Location";
 
@@ -26,6 +25,7 @@ const fetcher = url => axios.get(url).then(res => res.data);
 const Weather = () => {
   // Storing temperature unit and fetched data
   const [isCelsius, setIsCelsius] = useState(true);
+  const [timeOfDay, setTimeOfDay] = useState('day');
 
   const apiKey = '7ea842b63dec133617b1e39bad1c99ad';
   const city = 'Boston';
@@ -39,6 +39,18 @@ const Weather = () => {
   // API call with useSWR
   const {data: weatherData, error: weatherError, isLoading: weatherIsLoading} = useSWR(currentWeatherUrl, fetcher);
   const {data: forecastData, error: forecastError, isLoading: forecastIsLoading} = useSWR(forecastUrl, fetcher);
+
+  // To check time of day for the feature of dimming display at nighttime
+  useEffect(() => {
+    const hour = new Date().getHours();
+    if (hour >= 18 || hour < 6) {
+        setTimeOfDay('night');
+    } else if (hour >= 16) {
+        setTimeOfDay('evening');
+    } else {
+        setTimeOfDay('day');
+    }
+    }, []);
 
   if (weatherError || forecastError) {
     return <Text>Failed to load weather data</Text>;
@@ -100,9 +112,8 @@ const Weather = () => {
   });
 
   return (
-      <View style={styles.container}>
-          <Clouds />
-          {/*// <WeatherAnimations condition={currentCondition} />/*/}
+      <View style={[styles.container, timeOfDay === 'night' ? styles.nightMode : styles.dayMode]}>
+          <WeatherAnimations condition={currentCondition} />
         <View style={styles.dateAndSwitchContainer}>
             <View style={styles.dateContainer}>
                 <Text style={styles.date}>{currentDate}</Text>
@@ -135,6 +146,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     marginTop: 20,
     padding: 5,
+  },
+  dayMode: {
+    backgroundColor: 'white',
+  },
+  nightMode: {
+    backgroundColor: 'lightgray',
   },
   dateAndSwitchContainer: {
     marginBottom: 50,
