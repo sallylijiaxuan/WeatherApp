@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
 // Snowflake component that rotates and floats from top of the screen to the bottom
+// Will be called in Snow
 const Snowflake = ({ xStart, delay, duration, onEnd }) => {
     const translateY = useRef(new Animated.Value(-50)).current;
     const rotate = useRef(new Animated.Value(0)).current;

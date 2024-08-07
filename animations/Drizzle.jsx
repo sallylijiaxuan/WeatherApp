@@ -6,6 +6,7 @@ const { width: screenWidth } = Dimensions.get('window');
 const NUM_DROPS = 30;
 const DROP_DURATION = 3000;
 
+// Function that is similar with rain with reduced number of rain drops
 const Drizzle = () => {
     const pool = useRef([]);
     const [raindrops, setRaindrops] = useState(Array(NUM_DROPS).fill(null));

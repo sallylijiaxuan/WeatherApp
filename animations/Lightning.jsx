@@ -1,6 +1,7 @@
 import {useEffect, useRef} from 'react';
 import {Animated, StyleSheet} from 'react-native';
 
+// Function that will be called in Thunderstorm
 const Lightning = () => {
     const opacity = useRef(new Animated.Value(0)).current;
 

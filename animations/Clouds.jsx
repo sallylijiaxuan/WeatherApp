@@ -11,6 +11,8 @@ const ANIMATION_DURATION = 50000;
 const IMAGE_WIDTH = 1200;
 const IMAGE_HEIGHT = 1200;
 
+// Component that does image interpolation (creating gif)
+
 export default function Clouds() {
     const initialValue = 0;
     const translatedValue = useRef(new Animated.Value(initialValue)).current;
@@ -40,7 +42,7 @@ export default function Clouds() {
     return(
         <View style={styles.container}>
             <AnimatedImage
-                resizeMode="cover"
+                resizeMode="cover" // To ensure smooth animation of image
                 source={cloudsImage}
                 style={[
                     styles.image,

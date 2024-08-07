@@ -3,6 +3,7 @@ import { Animated, StyleSheet } from 'react-native';
 
 const DROP_SIZE = 2;
 
+// Function that will be called in Rain, Drizzle
 const RainDrop = ({ xStart, yStart, duration, onEnd }) => {
     const translateY = useRef(new Animated.Value(yStart)).current;
 

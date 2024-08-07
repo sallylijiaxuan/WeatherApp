@@ -45,6 +45,7 @@ const Weather = () => {
   const {data: weatherData, error: weatherError, isLoading: weatherIsLoading} = useSWR(currentWeatherUrl, fetcher);
   const {data: forecastData, error: forecastError, isLoading: forecastIsLoading} = useSWR(forecastUrl, fetcher);
 
+  // To check time of day for the feature of dimming display at night time
   useEffect(() => {
     const hour = new Date().getHours();
     if (hour >= 18 || hour < 6) {
