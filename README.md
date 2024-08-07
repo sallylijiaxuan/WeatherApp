@@ -8,13 +8,25 @@ Its a weather mobile application that allows the user to select one of the citie
 
 ### Features
 1) [add something about selecting cities]
+   
 2) Displaying current weather information:
    - Weather icon
    - Weather condition and description
    - Current temperature
    - Minimum and maximum temperature
    - Feels like temperature
-3) 
+     
+3) Displaying 5-day forecast weather information:
+   
+   The weather predicted for each day is according to the most prevalent condition on that day.
+   -  Weather icon
+   -  Weather description
+   -  Minimum and maximum temperature
+  
+4) Display of the app dims at night time
+
+5) Background
+  
 
 # Getting Started
 After cloning this repo on local device, do the following: 
