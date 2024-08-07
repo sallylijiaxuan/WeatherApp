@@ -6,13 +6,7 @@ import axios from 'axios';
 import SwitchTempUnits from './components/SwitchTempUnits';
 import CurrentWeather from './components/CurrentWeather';
 import ForecastWeather from "./components/ForecastWeather";
-import Clouds from './animations/Clouds';
-import Rain from './animations/Rain';
-import Drizzle from './animations/Drizzle'
 import WeatherAnimations from "./components/WeatherAnimations";
-import Thunderstorm from "./animations/Thunderstorm";
-import Clear from './animations/Clear';
-import Snow from './animations/Snow';
 
 /*
 Steps on terminal to run app:
@@ -45,7 +39,7 @@ const Weather = () => {
   const {data: weatherData, error: weatherError, isLoading: weatherIsLoading} = useSWR(currentWeatherUrl, fetcher);
   const {data: forecastData, error: forecastError, isLoading: forecastIsLoading} = useSWR(forecastUrl, fetcher);
 
-  // To check time of day for the feature of dimming display at night time
+  // To check time of day for the feature of dimming display at nighttime
   useEffect(() => {
     const hour = new Date().getHours();
     if (hour >= 18 || hour < 6) {
@@ -118,12 +112,6 @@ const Weather = () => {
 
   return (
       <View style={[styles.container, timeOfDay === 'night' ? styles.nightMode : styles.dayMode]}>
-          {/*<Clouds />*/}
-          {/*<Drizzle/>*/}
-          {/*<Rain/>*/}
-          {/*<Thunderstorm/>*/}
-          {/*<Clear/>*/}
-          {/*<Snow/>*/}
           <WeatherAnimations condition={currentCondition} />
         <View style={styles.dateAndSwitchContainer}>
             <View style={styles.dateContainer}>
