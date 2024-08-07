@@ -1,8 +1,20 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Overview
-This react native project is built and developed with macOS and iOS simulator.
+### About
+This react native project is built and developed with macOS and iOS simulator. 
 
+Its a weather mobile application that allows the user to select one of the cities in the US, and displays its corresponding current weather information, as well as a 5-day forecast.
+
+### Features
+1) [add something about selecting cities]
+2) Displaying current weather information:
+   - Weather icon
+   - Weather condition and description
+   - Current temperature
+   - Minimum and maximum temperature
+   - Feels like temperature
+3) 
 
 # Getting Started
 After cloning this repo on local device, do the following: 
@@ -92,6 +104,16 @@ You've successfully run the React Native App. :partying_face:
 
 # Troubleshooting
 
+When there are errors or that the app has failed to build, it helps to remove cache and re-build the application:
+
+**Removing cache:** `npx react-native start --reset-cache`
+
+**Rebuild project:**
+- `cd ios`
+- `pod install`
+- `cd ..`
+- `npx react-native run-ios`
+  
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
