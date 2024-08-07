@@ -10,6 +10,9 @@ import Clouds from './animations/Clouds';
 import Rain from './animations/Rain';
 import Drizzle from './animations/Drizzle'
 import WeatherAnimations from "./components/WeatherAnimations";
+import Thunderstorm from "./animations/Thunderstorm";
+import Clear from './animations/Clear';
+import Snow from './animations/Snow';
 
 /*
 Steps on terminal to run app:
@@ -117,6 +120,9 @@ const Weather = () => {
           {/*<Clouds />*/}
           {/*<Drizzle/>*/}
           {/*<Rain/>*/}
+          {/*<Thunderstorm/>*/}
+          {/*<Clear/>*/}
+          {/*<Snow/>*/}
           <WeatherAnimations condition={currentCondition} />
         <View style={styles.dateAndSwitchContainer}>
             <View style={styles.dateContainer}>

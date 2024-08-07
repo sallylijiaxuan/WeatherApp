@@ -7,6 +7,7 @@ const NUM_DROPS = 100;
 const DROP_DURATION = 3000;
 
 const Rain = () => {
+    // Empty array to store reusable RainDrop components
     const pool = useRef([]);
     const [raindrops, setRaindrops] = useState(Array(NUM_DROPS).fill(null));
 
@@ -36,6 +37,7 @@ const Rain = () => {
         });
     }, []);
 
+    // View that will render and contains all the raindrops component
     return <View style={styles.container}>{raindrops}</View>;
 };
 

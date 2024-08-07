@@ -5,13 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa6354f-07a1-4367-ad9c-ba7e9200d8c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/animations/Drizzle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animations/RainDrop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animations/Clear.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animations/Lightning.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animations/Snow.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animations/Snowflake.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/animations/Thunderstorm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Weather.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animations/Clouds.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/animations/Clouds.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/animations/Rain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/animations/Rain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animations/RainDrop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/animations/RainDrop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/WeatherAnimations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/WeatherAnimations.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/ComponentDescriptors.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/ComponentDescriptors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/EventEmitters.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/EventEmitters.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/Props.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/Props.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/RCTComponentViewHelpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/ShadowNodes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/ShadowNodes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/States.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/build/generated/ios/react/renderer/components/lottiereactnative/States.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/React/Fabric/RCTThirdPartyFabricComponentsProvider.h" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native/React/Fabric/RCTThirdPartyFabricComponentsProvider.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/React/Fabric/RCTThirdPartyFabricComponentsProvider.mm" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-native/React/Fabric/RCTThirdPartyFabricComponentsProvider.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

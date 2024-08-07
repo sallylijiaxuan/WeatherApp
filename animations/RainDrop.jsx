@@ -1,6 +1,5 @@
-// Raindrop.js
 import { useEffect, useRef } from 'react';
-import {Animated, Easing, StyleSheet, View} from 'react-native';
+import { Animated, StyleSheet } from 'react-native';
 
 const DROP_SIZE = 2;
 
@@ -9,7 +8,7 @@ const RainDrop = ({ xStart, yStart, duration, onEnd }) => {
 
     useEffect(() => {
         Animated.timing(translateY, {
-            toValue: 1000, // Screen height, adjust as needed
+            toValue: 1000, // Screen height
             duration,
             useNativeDriver: true,
         }).start(() => onEnd());

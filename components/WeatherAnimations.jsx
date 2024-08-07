@@ -1,6 +1,9 @@
 import Clouds from '../animations/Clouds';
 import Rain from '../animations/Rain';
 import Drizzle from '../animations/Drizzle';
+import Thunderstorm from "../animations/Thunderstorm";
+import Clear from "../animations/Clear";
+import Snow from "../animations/Snow";
 
 // Possible conditions: Thunderstorm, Drizzle, Rain, Snow, Clear, Atmosphere(?)
 const WeatherAnimations = ({ condition }) => {
@@ -14,8 +17,17 @@ const WeatherAnimations = ({ condition }) => {
         case 'Drizzle':
             return <Drizzle />;
 
+        case 'Thunderstorm':
+            return <Thunderstorm />;
+
+        case 'Clear':
+            return <Clear />;
+
+        case 'Snow':
+            return <Snow />;
+
         default:
-            return null;
+            return <Clouds />;
     }
 };
 
