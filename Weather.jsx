@@ -72,6 +72,15 @@ const Weather = () => {
                 day: '2-digit',
             });
 
+            // const todayDate = new Date(item.dt_txt).toLocaleDateString('en-US', {
+            //     month: '2-digit',
+            //     day: '2-digit',
+            // });
+            //
+            // if (date === todayDate) {
+            //     return acc;
+            // }
+
             if (!acc[date]) {
                 acc[date] = {
                     date,
@@ -83,7 +92,7 @@ const Weather = () => {
                 };
             } else { // if the date exists, update max and min temp if applicable
                 acc[date].maxTemp = Math.max(acc[date].maxTemp, item.main.temp_max);
-                acc[date].minTemp = Math.max(acc[date].minTemp, item.main.temp_min);
+                acc[date].minTemp = Math.min(acc[date].minTemp, item.main.temp_min);
             }
 
             const condition = item.weather[0].main;
@@ -94,7 +103,9 @@ const Weather = () => {
 
             return acc;
         }, {})
-    ).map(day => {
+    )
+        .slice(1,6) // To display the next 5-days
+        .map(day => {
         // Determining the majority condition
         const dominantCondition = Object.keys(day.conditionCounts).reduce((conditionA, conditionB) =>
             day.conditionCounts[conditionA] > day.conditionCounts[conditionB] ? conditionA : conditionB
