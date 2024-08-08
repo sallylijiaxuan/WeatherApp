@@ -14,7 +14,6 @@ const Clear = () => {
 const styles = StyleSheet.create({
     container: {
         ...StyleSheet.absoluteFillObject,
-        overflow: 'hidden',
     },
 })
 

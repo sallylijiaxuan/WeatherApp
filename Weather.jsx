@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {View, Text, StyleSheet, ActivityIndicator, FlatList, StatusBar} from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 import useSWR from 'swr';
 import axios from 'axios';
 import SwitchTempUnits from './components/SwitchTempUnits';
@@ -125,7 +125,6 @@ const Weather = () => {
     // FlatList internally calls and optimizes renderItem
     return (
         <View style={[styles.container, timeOfDay === 'night' ? styles.nightMode : styles.dayMode]}>
-            <StatusBar barStyle="auto" />
             <WeatherAnimations condition={currentCondition} />
 
             <View style={styles.citySelectorAndSwitchContainer}>
