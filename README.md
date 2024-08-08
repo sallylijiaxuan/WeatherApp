@@ -9,7 +9,7 @@ Its a weather mobile application that allows the user to select one of the citie
 For more details on project contributions, please read CONTRIBUTIONS.md.
 
 ### Features
-1) [add something about selecting cities]
+1) Drop down menu to select other major cities in US
    
 2) Displaying current weather information:
    - Weather icon
