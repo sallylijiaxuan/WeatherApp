@@ -2,6 +2,7 @@
 **Group members and contributions:**
 
 - **Sally Li (jiaxuanl@bu.edu)**
+  - Creating app icon
   - Drop down menu on list of cities
     - **Components:**
       1. CitySelector.jsx
