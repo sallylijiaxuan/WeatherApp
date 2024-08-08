@@ -44,8 +44,6 @@ const styles = StyleSheet.create({
     container: {
         ...StyleSheet.absoluteFillObject,
         overflow: 'hidden',
-        // backgroundColor: 'gray',
-        // opacity: 0.2,
     },
 });
 

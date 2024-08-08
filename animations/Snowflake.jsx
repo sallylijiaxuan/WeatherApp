@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { Animated, StyleSheet } from 'react-native';
 
 // Snowflake component that rotates and floats from top of the screen to the bottom
 // Will be called in Snow
@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
         height: 10,
         backgroundColor: 'white',
         borderRadius: 3,
-        // borderColor: 'black',
     },
 });
 

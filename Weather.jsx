@@ -72,15 +72,6 @@ const Weather = () => {
                 day: '2-digit',
             });
 
-            // const todayDate = new Date(item.dt_txt).toLocaleDateString('en-US', {
-            //     month: '2-digit',
-            //     day: '2-digit',
-            // });
-            //
-            // if (date === todayDate) {
-            //     return acc;
-            // }
-
             if (!acc[date]) {
                 acc[date] = {
                     date,
@@ -104,7 +95,7 @@ const Weather = () => {
             return acc;
         }, {})
     )
-        .slice(1,6) // To display the next 5-days
+        .slice(1,6) // To display the next 5-days only
         .map(day => {
         // Determining the majority condition
         const dominantCondition = Object.keys(day.conditionCounts).reduce((conditionA, conditionB) =>
