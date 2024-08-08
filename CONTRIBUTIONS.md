@@ -2,9 +2,9 @@
 **Group members and contributions:**
 
 - **Sally Li (jiaxuanl@bu.edu)**
-  - Drop down autocomplete on list of cities
+  - Drop down menu on list of cities
     - **Components:**
-      1. [___].jsx
+      1. CitySelector.jsx
   
 
 - **Ellen Burhansjah (eburhan@bu.edu)**
