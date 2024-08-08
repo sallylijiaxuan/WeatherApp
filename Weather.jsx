@@ -7,7 +7,7 @@ import CurrentWeather from './components/CurrentWeather';
 import ForecastWeather from "./components/ForecastWeather";
 import WeatherAnimations from "./components/WeatherAnimations";
 import CitySelector from "./components/CitySelector";
-// import Snow from "./animations/Snow"
+
 
 /*
 Steps on terminal to run app:
@@ -118,6 +118,7 @@ const Weather = () => {
         );
     };
 
+
     // FlatList must not nest with renderItem.
     // FlatList internally calls and optimizes renderItem
     return (
@@ -125,6 +126,9 @@ const Weather = () => {
             <WeatherAnimations condition={currentCondition} />
             <View style={styles.citySelectorAndSwitchContainer}>
                 <CitySelector selectedCity={city} onCityChange={setCity} />
+
+            <View style={styles.switchContainer}>
+
                 <SwitchTempUnits
                     isCelsius={isCelsius}
                     onValueChange={() => setIsCelsius(!isCelsius)}
