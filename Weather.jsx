@@ -124,10 +124,9 @@ const Weather = () => {
     return (
         <View style={[styles.container, timeOfDay === 'night' ? styles.nightMode : styles.dayMode]}>
             <WeatherAnimations condition={currentCondition} />
+
             <View style={styles.citySelectorAndSwitchContainer}>
                 <CitySelector selectedCity={city} onCityChange={setCity} />
-
-            <View style={styles.switchContainer}>
 
                 <SwitchTempUnits
                     isCelsius={isCelsius}
