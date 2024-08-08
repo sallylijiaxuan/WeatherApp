@@ -27,6 +27,8 @@
 #import "react/renderer/components/rnsvg/States.h"
 #import "rnsvg/rnsvg.h"
 #import "rnsvgJSI.h"
+#import "RNVectorIconsSpec/RNVectorIconsSpec.h"
+#import "RNVectorIconsSpecJSI.h"
 
 FOUNDATION_EXPORT double React_CodegenVersionNumber;
 FOUNDATION_EXPORT const unsigned char React_CodegenVersionString[];
