@@ -49,7 +49,7 @@ For the following,
 
 ### Installing dependencies
 
-1) Install Node and Watchman with [**Homebew**](https://brew.sh) in a terminal before installing the below with Homebrew:
+1) Install Node and Watchman with [**Homebrew**](https://brew.sh) in a terminal before installing the below with Homebrew:
    - `brew install node`
    - `brew install watchman`
   
